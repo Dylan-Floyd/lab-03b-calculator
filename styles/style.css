@@ -72,6 +72,7 @@ h2 {
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
+    margin-bottom: 20px;
 }
 
 header img {
@@ -111,3 +112,47 @@ footer {
     }
 
   }
+
+.number-input {
+    margin: 5px;
+}
+
+button {
+    margin: 5px;
+    padding: 2px 5px;
+    border: 1px solid black;
+    border-radius: 3px;
+    background-color: rgb(33, 77, 207);
+    color: white;
+    font-size: 18px;
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: rgb(24, 58, 160);
+}
+
+/* disable increment/decrement button on number inputs 
+*  source: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp
+*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+input {
+    box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.2);
+    font-size: 18px;
+    width: 298px;
+}
+
+span {
+    font-size: 30px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
